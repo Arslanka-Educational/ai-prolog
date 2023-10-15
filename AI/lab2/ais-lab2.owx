@@ -1,0 +1,730 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/arslan-gin/ontologies/2023/9/ais-lab2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/arslan-gin/ontologies/2023/9/ais-lab2">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ais-lab2" IRI="http://www.semanticweb.org/arslan-gin/ontologies/2023/9/ais-lab2/"/>
+    <Declaration>
+        <Class IRI="#continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#developer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#team"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#areGameOpponents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#areSameCountryTeams"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#antarctica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#csgo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dota2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#epic_games"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fortnite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#g2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gambit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#minecraft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#moba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mojang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#navi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#netherlands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#og"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rockstar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#russia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sandbox"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shooter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#south_america"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#survival"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#team_liquid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ukraine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#virtus_pro"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#continent"/>
+        <NamedIndividual IRI="#antarctica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#continent"/>
+        <NamedIndividual IRI="#asia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#continent"/>
+        <NamedIndividual IRI="#australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#game"/>
+        <NamedIndividual IRI="#csgo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#game"/>
+        <NamedIndividual IRI="#dota2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#developer"/>
+        <NamedIndividual IRI="#epic_games"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#continent"/>
+        <NamedIndividual IRI="#europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#game"/>
+        <NamedIndividual IRI="#fortnite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#g2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#gambit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#country"/>
+        <NamedIndividual IRI="#germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#game"/>
+        <NamedIndividual IRI="#gta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#game"/>
+        <NamedIndividual IRI="#minecraft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#genre"/>
+        <NamedIndividual IRI="#moba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#developer"/>
+        <NamedIndividual IRI="#mojang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#navi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#country"/>
+        <NamedIndividual IRI="#netherlands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#og"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#developer"/>
+        <NamedIndividual IRI="#rockstar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#country"/>
+        <NamedIndividual IRI="#russia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#genre"/>
+        <NamedIndividual IRI="#sandbox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#genre"/>
+        <NamedIndividual IRI="#shooter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#continent"/>
+        <NamedIndividual IRI="#south_america"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#genre"/>
+        <NamedIndividual IRI="#survival"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#team_liquid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#country"/>
+        <NamedIndividual IRI="#ukraine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#developer"/>
+        <NamedIndividual IRI="#valve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#team"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+        <NamedIndividual IRI="#asia"/>
+        <NamedIndividual IRI="#russia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+        <NamedIndividual IRI="#csgo"/>
+        <NamedIndividual IRI="#valve"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <NamedIndividual IRI="#csgo"/>
+        <NamedIndividual IRI="#gambit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <NamedIndividual IRI="#csgo"/>
+        <NamedIndividual IRI="#navi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <NamedIndividual IRI="#csgo"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <NamedIndividual IRI="#csgo"/>
+        <NamedIndividual IRI="#shooter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+        <NamedIndividual IRI="#dota2"/>
+        <NamedIndividual IRI="#valve"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <NamedIndividual IRI="#dota2"/>
+        <NamedIndividual IRI="#navi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <NamedIndividual IRI="#dota2"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <NamedIndividual IRI="#dota2"/>
+        <NamedIndividual IRI="#moba"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+        <NamedIndividual IRI="#epic_games"/>
+        <NamedIndividual IRI="#fortnite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+        <NamedIndividual IRI="#europe"/>
+        <NamedIndividual IRI="#germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+        <NamedIndividual IRI="#europe"/>
+        <NamedIndividual IRI="#netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+        <NamedIndividual IRI="#europe"/>
+        <NamedIndividual IRI="#russia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+        <NamedIndividual IRI="#europe"/>
+        <NamedIndividual IRI="#ukraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+        <NamedIndividual IRI="#fortnite"/>
+        <NamedIndividual IRI="#epic_games"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <NamedIndividual IRI="#fortnite"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <NamedIndividual IRI="#fortnite"/>
+        <NamedIndividual IRI="#survival"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <NamedIndividual IRI="#g2"/>
+        <NamedIndividual IRI="#russia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <NamedIndividual IRI="#gambit"/>
+        <NamedIndividual IRI="#russia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <NamedIndividual IRI="#gambit"/>
+        <NamedIndividual IRI="#csgo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+        <NamedIndividual IRI="#germany"/>
+        <NamedIndividual IRI="#europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+        <NamedIndividual IRI="#germany"/>
+        <NamedIndividual IRI="#team_liquid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+        <NamedIndividual IRI="#gta"/>
+        <NamedIndividual IRI="#rockstar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <NamedIndividual IRI="#gta"/>
+        <NamedIndividual IRI="#shooter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+        <NamedIndividual IRI="#minecraft"/>
+        <NamedIndividual IRI="#mojang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <NamedIndividual IRI="#minecraft"/>
+        <NamedIndividual IRI="#og"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <NamedIndividual IRI="#minecraft"/>
+        <NamedIndividual IRI="#sandbox"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+        <NamedIndividual IRI="#moba"/>
+        <NamedIndividual IRI="#dota2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+        <NamedIndividual IRI="#mojang"/>
+        <NamedIndividual IRI="#minecraft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <NamedIndividual IRI="#navi"/>
+        <NamedIndividual IRI="#ukraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <NamedIndividual IRI="#navi"/>
+        <NamedIndividual IRI="#csgo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <NamedIndividual IRI="#navi"/>
+        <NamedIndividual IRI="#dota2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+        <NamedIndividual IRI="#netherlands"/>
+        <NamedIndividual IRI="#europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+        <NamedIndividual IRI="#netherlands"/>
+        <NamedIndividual IRI="#og"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <NamedIndividual IRI="#og"/>
+        <NamedIndividual IRI="#netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <NamedIndividual IRI="#og"/>
+        <NamedIndividual IRI="#minecraft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+        <NamedIndividual IRI="#rockstar"/>
+        <NamedIndividual IRI="#gta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+        <NamedIndividual IRI="#russia"/>
+        <NamedIndividual IRI="#asia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+        <NamedIndividual IRI="#russia"/>
+        <NamedIndividual IRI="#europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+        <NamedIndividual IRI="#russia"/>
+        <NamedIndividual IRI="#g2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+        <NamedIndividual IRI="#russia"/>
+        <NamedIndividual IRI="#gambit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+        <NamedIndividual IRI="#russia"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+        <NamedIndividual IRI="#sandbox"/>
+        <NamedIndividual IRI="#minecraft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+        <NamedIndividual IRI="#shooter"/>
+        <NamedIndividual IRI="#csgo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+        <NamedIndividual IRI="#shooter"/>
+        <NamedIndividual IRI="#gta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+        <NamedIndividual IRI="#survival"/>
+        <NamedIndividual IRI="#fortnite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <NamedIndividual IRI="#team_liquid"/>
+        <NamedIndividual IRI="#germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+        <NamedIndividual IRI="#ukraine"/>
+        <NamedIndividual IRI="#europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+        <NamedIndividual IRI="#ukraine"/>
+        <NamedIndividual IRI="#navi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+        <NamedIndividual IRI="#valve"/>
+        <NamedIndividual IRI="#csgo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+        <NamedIndividual IRI="#valve"/>
+        <NamedIndividual IRI="#dota2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+        <NamedIndividual IRI="#russia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+        <NamedIndividual IRI="#csgo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+        <NamedIndividual IRI="#dota2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <NamedIndividual IRI="#virtus_pro"/>
+        <NamedIndividual IRI="#fortnite"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#areGameOpponents"/>
+    </SymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isCountryWithTeam"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isDeveloperOfGame"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isGenreOfGame"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#areGameOpponents"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#areSameCountryTeams"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+        <Class IRI="#continent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+        <Class IRI="#country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+        <Class IRI="#game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <Class IRI="#game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <Class IRI="#game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#continent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#areGameOpponents"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#areSameCountryTeams"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContinentWithCountry"/>
+        <Class IRI="#country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCountryInContinent"/>
+        <Class IRI="#continent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGameDevelopedBy"/>
+        <Class IRI="#developer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGamePlayedByTeam"/>
+        <Class IRI="#team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGameWithGenre"/>
+        <Class IRI="#genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTeamFromCountry"/>
+        <Class IRI="#country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTeamPlayingGame"/>
+        <Class IRI="#game"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#country"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>areGameOpponents</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isGamePlayedByTeam"/>
+                <Variable abbreviatedIRI="owl:game1"/>
+                <Variable abbreviatedIRI="owl:team1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isGamePlayedByTeam"/>
+                <Variable abbreviatedIRI="owl:game1"/>
+                <Variable abbreviatedIRI="owl:team2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#areGameOpponents"/>
+                <Variable abbreviatedIRI="owl:team1"/>
+                <Variable abbreviatedIRI="owl:team2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
